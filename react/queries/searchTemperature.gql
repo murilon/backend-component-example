@@ -1,0 +1,8 @@
+query searchTemperature ($productId: String) {
+  getTemperature (productId: $productId) {
+    oid
+    timestamp
+    id
+    temperature
+  }
+}

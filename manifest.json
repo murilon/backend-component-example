@@ -1,0 +1,50 @@
+{
+  "name": "backend-component-example",
+  "vendor": "murilofaria",
+  "version": "0.0.1",
+  "title": "Events Example",
+  "description": "Reference app for VTEX IO Services",
+  "dependencies": {
+    "vtex.styleguide": "9.x",
+    "vtex.css-handles": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "builders": {
+    "node": "6.x",
+    "docs": "0.x",
+    "graphql": "1.x",
+    "messages": "1.x",
+    "store": "0.x",
+    "react": "3.x"
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "vbase-read-write"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "vtexfetch.free.beeceptor.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "g0t4azcja3.execute-api.sa-east-1.amazonaws.com",
+        "path": "*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

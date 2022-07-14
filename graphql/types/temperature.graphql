@@ -1,0 +1,8 @@
+# /graphql/types/temperature.graphql
+
+type Temperature {
+  oid: String
+  timestamp: String
+  id: String
+  temperature: Float
+}

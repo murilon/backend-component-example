@@ -1,0 +1,3 @@
+type Query{
+  getTemperature(productId: String): Temperature
+}

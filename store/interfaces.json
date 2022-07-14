@@ -1,0 +1,8 @@
+{
+  "countdown": {
+    "component": "Countdown"
+  },
+  "temperature": {
+    "component": "Temperatura"
+  }
+}
