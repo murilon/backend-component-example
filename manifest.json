@@ -1,9 +1,9 @@
 {
-  "name": "backend-component-example",
+  "name": "fullstack-component-example",
   "vendor": "murilofaria",
   "version": "0.0.1",
-  "title": "Events Example",
-  "description": "Reference app for VTEX IO Services",
+  "title": "Fullstack Component Example",
+  "description": "Exports a front-end component to be used in a VTEX Store Theme that connects an external endpoint using axios",
   "dependencies": {
     "vtex.styleguide": "9.x",
     "vtex.css-handles": "0.x",

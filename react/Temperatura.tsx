@@ -3,7 +3,6 @@ import { FormattedMessage } from 'react-intl'
 import React from 'react'
 import { useQuery } from 'react-apollo'
 import { useProduct } from 'vtex.product-context'
-
 import { Spinner } from 'vtex.styleguide'
 
 import { searchTemperature } from './queries/searchTemperature.gql'
@@ -74,14 +73,14 @@ const Temperature: StorefrontFunctionComponent<TemperatureProps> = ({
 }
 
 Temperature.schema = {
-  title: 'editor.temperature.title',
-  description: 'editor.temperature.description',
+  title: 'Temperature Custom Component',
+  description: 'Edit the temperature custom component',
   type: 'object',
   properties: {
     title: {
-      title: 'I am a title',
+      title: 'Tittle',
       type: 'string',
-      default: null,
+      default: '❄ Temperature ❄',
     },
   },
 }
