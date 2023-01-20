@@ -1,13 +1,14 @@
 {
   "name": "fullstack-component-example",
   "vendor": "murilofaria",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Fullstack Component Example",
   "description": "Exports a front-end component to be used in a VTEX Store Theme that connects an external endpoint using axios",
   "dependencies": {
     "vtex.styleguide": "9.x",
     "vtex.css-handles": "0.x",
-    "vtex.product-context": "0.x"
+    "vtex.product-context": "0.x",
+    "vtex.session-client": "1.x"
   },
   "builders": {
     "node": "6.x",
@@ -44,6 +45,16 @@
         "host": "g0t4azcja3.execute-api.sa-east-1.amazonaws.com",
         "path": "*"
       }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/*"
+      }
+    },
+    {
+      "name": "ADMIN_DS"
     }
   ],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

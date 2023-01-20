@@ -7,6 +7,7 @@ import type {
 import { Service } from '@vtex/api'
 
 import { getTemperature } from './routes/temperature'
+import { getCluster } from './routes/cluster'
 
 declare global {
   type Context = ServiceContext<IOClients, State>
@@ -21,6 +22,7 @@ export default new Service<IOClients, State, ParamsContext>({
     resolvers: {
       Query: {
         getTemperature,
+        getCluster,
       },
     },
   },

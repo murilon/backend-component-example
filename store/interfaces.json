@@ -1,6 +1,6 @@
 {
-  "countdown": {
-    "component": "Countdown"
+  "cluster": {
+    "component": "ClusterComponent"
   },
   "temperature": {
     "component": "Temperatura"

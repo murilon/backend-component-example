@@ -1,3 +1,4 @@
 type Query{
   getTemperature(productId: String): Temperature
+  getCluster(emailSession: String): Cluster
 }

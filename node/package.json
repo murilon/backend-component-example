@@ -1,7 +1,8 @@
 {
   "dependencies": {
-    "co-body": "^6.0.0",
-    "axios": "^0.27.2"
+    "@vtex/clients": "^2.21.0",
+    "axios": "^0.27.2",
+    "co-body": "^6.0.0"
   },
   "devDependencies": {
     "@types/co-body": "^0.0.3",

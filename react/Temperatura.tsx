@@ -38,7 +38,7 @@ const Temperature: StorefrontFunctionComponent<TemperatureProps> = ({
   if (loading) {
     return (
       <span className="dib c-muted-1">
-        <Spinner color="currentColor" size={20} />
+        <Spinner color="currentColor" size={30} />
       </span>
     )
   }

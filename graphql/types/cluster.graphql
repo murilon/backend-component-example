@@ -1,0 +1,5 @@
+# /graphql/types/cluster.graphql
+
+type Cluster {
+  cluster: String
+}

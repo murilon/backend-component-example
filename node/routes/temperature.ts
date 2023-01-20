@@ -22,14 +22,10 @@ export async function getTemperature(
 
   try {
     const response = await axios.get(url, headers)
-
-    console.log(response.data)
     const item = response.data.Item
-
-    console.log(item)
 
     return item
   } catch (error) {
-    console.log(error)
+    return null
   }
 }
