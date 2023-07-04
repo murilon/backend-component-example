@@ -44,6 +44,8 @@ const ClusterComponent: StorefrontFunctionComponent<ClusterProps> = ({
     return <div> Usuário não autenticado! </div>
   }
 
+  console.log(session)
+
   return (
     <>
       <div className={`${handles.title} db tc`}>{titleText}</div>

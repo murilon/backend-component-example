@@ -28,8 +28,16 @@ const Temperature: StorefrontFunctionComponent<TemperatureProps> = ({
   const titleText = title || <FormattedMessage id="temperature.title" />
   const handles = useCssHandles(CSS_HANDLES)
 
+  const cervejaCategoryId = "3"
+
   const productContextValue = useProduct()
   const id = productContextValue?.product?.productId
+
+  console.log(productContextValue)
+
+  if(productContextValue?.product?.categoryId != cervejaCategoryId){
+    return <div className={`${handles.nodata} db tc`}> Produto não contemplado!</div>
+  }
 
   const { loading, error, data } = useQuery(searchTemperature, {
     variables: { productId: id },

@@ -1,7 +1,7 @@
 {
   "name": "fullstack-component-example",
   "vendor": "murilofaria",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "title": "Fullstack Component Example",
   "description": "Exports a front-end component to be used in a VTEX Store Theme that connects an external endpoint using axios",
   "dependencies": {
